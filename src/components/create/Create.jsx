@@ -22,13 +22,6 @@ import classes from "./create.module.css";
   const handleCreateProduct = async(e) => {
 
   }
-
-
-
-
-
-
-
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>

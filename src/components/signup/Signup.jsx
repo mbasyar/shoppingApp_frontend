@@ -11,7 +11,7 @@ const Signup = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState(false)
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   const navigate = useNavigate()
   
   const handleSignup = async(e) => {
@@ -29,12 +29,12 @@ const Signup = () => {
       dispatchEvent(register(data))
       navigate('/')
     }
-    catch (error)
+    catch (error) {
     setError(true)
     setTimeout(() => {
       setError(false)
     }, 3000);
-  }
+  }}
 
   return (
   <div className={classes.signUpContainer}>
